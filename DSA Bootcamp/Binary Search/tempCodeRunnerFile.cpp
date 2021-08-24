@@ -1,0 +1,1 @@
+int pivot(int arr[], int n)
