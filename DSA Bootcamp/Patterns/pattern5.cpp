@@ -18,9 +18,30 @@ void pattern(int n)
         cout<<"\n";
     }
 }
+//another version
+void pattern_2(int n)
+{
+    for(int i=1;i<=2*n;i++)
+    {
+        if(i<=n){
+        for(int j=1;j<=i;j++)
+            cout<<" * ";
+        cout<<"\n";}
+        else
+        {
+            for (int j = i; j < 2*n; j++)
+            {
+                cout<<" * ";
+            }
+            cout<<"\n";
+            
+        }
+        
+    }
+}
 int main()
 {
     int n;
     cin>>n;
-    pattern(n);
+    pattern_2(n);
 }
