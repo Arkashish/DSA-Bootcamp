@@ -22,7 +22,7 @@ int binsearch(int ar[],int target,int start,int end)
 int ans(int ar[],int target)
 {
     int start = 0,end = 1;
-    if(target > ar[end])
+    while(target > ar[end])
     {
         int temp = end+1;
         end = end + (end-start+1)*2;//box size
