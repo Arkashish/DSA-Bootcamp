@@ -13,10 +13,10 @@ int main()
         {
             cout<<"   ";
         }
-        int c=1;
+        int c=i;
         for(int k=1;k<=i;k++)
         {
-            cout<<" "<<c++<<" ";
+            cout<<" "<<c--<<" ";
         }
         if(i>1){
         for (int k = 2; k <= i; k++)
