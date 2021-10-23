@@ -13,6 +13,7 @@ typedef long long int ll;
 #define ump unordered_map
 #define dec2bin(n) std::bitset<8>(n).to_string()
 #define str2int(n) std::stoi(n)
+#define bin2dec(n) std::stoi(bin, nullptr, 2)
 int reversDigits(int num)
 {
     int rev_num = 0;
@@ -56,7 +57,8 @@ int main() {
     cout<<ans<<endl;
     string s = std::to_string(ans);
     std::string bin(s);
-    int dec = std::stoi(bin, nullptr, 2);
+    // int dec = std::stoi(bin, nullptr, 2);
+    int dec = bin2dec(bin);
     cout<<"Final ans: "<<dec;
     // cout<<std::setbase(10)<<reversDigits(r);
 	return 0;
