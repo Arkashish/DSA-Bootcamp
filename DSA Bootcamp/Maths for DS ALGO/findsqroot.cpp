@@ -63,7 +63,7 @@ int main()
     }
     cout << pos << endl;
     cout << "\n Priting upto p decimal places so enter value of p and see magic: " << endl;
-    int p; //with precicisiom
+    int p; //with precision
     cin >> p;
     cout << "\nThe square root of the number is: " << sqrt_(n, p) << endl;
 }
