@@ -9,7 +9,7 @@ double sqrt_(double n)
     {
         root = 0.5 * (x+(n/x));
 
-        if(abs(root-x)<1)
+        if(abs(root-x)<0.5)
         break;
         x=root;
     }
