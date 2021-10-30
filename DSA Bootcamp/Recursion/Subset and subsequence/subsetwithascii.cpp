@@ -12,7 +12,7 @@ void subsetwithascii(string str,string temp)
     subsetwithascii(str.substr(1),temp+str[0]);
     subsetwithascii(str.substr(1),temp);
     subsetwithascii(str.substr(1),temp+(char)(str[0]+(char)0));    
-    subsetwithascii(str.substr(1),temp+str[0]+char('0'));    
+    // subsetwithascii(str.substr(1),temp+str[0]+char(str[0]+0));    
 }
 void subset(string str,string temp)
 {
