@@ -33,7 +33,7 @@ void file_io()
     freopen("output.txt", "w", stdout);
 #endif
 }
-bool issafe(vector<vector<int>> &arr,int row,int col,int n)
+bool issafe(vector<vector<bool>> &arr,int row,int col,int n)
 {
     //upper column check
     for(int i=row-1;i>=0;i--)
@@ -54,7 +54,7 @@ bool issafe(vector<vector<int>> &arr,int row,int col,int n)
     return true;
     
 }
-void display(vector<vector<int>> &arr,int row,int col)
+void display(vector<vector<bool>> &arr,int row,int col)
 {
     for (int i = 0; i < row; i++)
     {
@@ -69,7 +69,7 @@ void display(vector<vector<int>> &arr,int row,int col)
     }
     
 }   
-int countnqueens(vector<vector<int>> &arr,int r,int n)
+int countnqueens(vector<vector<bool>> &arr,int r,int n)
 {
     if(r==n)
     {
@@ -95,7 +95,7 @@ int main()
     file_io();
     int n;
     cin>>n;
-    vector<vector<int>> ans(n,vector<int>(n,0));
+    vector<vector<bool>> ans(n,vector<bool>(n,false));
     cout<<"The total number possible is: "<<countnqueens(ans,0,n);
 
 #ifndef ONLINE_JUDGE
